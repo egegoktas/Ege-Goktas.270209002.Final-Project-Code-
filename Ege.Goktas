@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int catalogfunction()
+{
+int i;
+FILE*the_file=fopen("Catalog.txt","r");
+if(the_file == NULL) {
+    perror("Unable to open the file.");
+    exit(1);
+}
+
+char line[200];
+while (fgets(line,sizeof(line),the_file)){
+    char *token;
+    token=strtok(line,";");
+    while(token!=NULL){
+   printf("%-12s",token);
+    token=strtok(NULL,";");
+    }
+}
+printf("\n");
+
+}
