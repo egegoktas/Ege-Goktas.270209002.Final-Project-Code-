@@ -1,0 +1,576 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+
+  printf("Welcome to our IZMIR YASAM DESTEK HEALTH COMPANY\n");
+  printf("Here is the catalog about the products which will you want to sell any company.\n\n\n");
+  catalogfunction();
+
+static int Totalvalue;
+int i,j,choice1,g,m,dolphin,haspet,ansell,p,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,num,num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13,num14,num15,num16,c=1,d,a[9],cost[9];
+for(i=0;i<9;i++)
+a[i]=0;
+char str[100];
+char items[9][100]={"Dolphin Blue Nitrile",
+ "Dolphin Powdered Latex",
+ "Dolphin Powdered-free Latex"
+ };
+printf("Please Enter Name for bill\n");
+gets(str);
+system("CLS");
+printf("Hello %s Welcome to our MEDICAL COMPANY\n",str);
+main:
+do
+{
+if(c==1)
+{
+printf("ENTER VALUE FOR\n1-MEDICAL GLOVES\n2-MEDICAL MASKS\n3-DISINFECTANTS\nAny other number to exit\n");
+scanf("%d",&choice1);
+system("CLS");
+switch (choice1)
+{
+case 1:
+printf("Please select gloves brand.\n");
+printf("1-Dolphin\n2-Haspet\n3-Ansell\n");
+scanf("%d",&g);
+system("CLS");
+switch(g)
+{
+case 1:
+
+printf("You chose Dolphin Gloves!\n");
+printf("Please Choose Type of Gloves\n");
+printf("1-Dolphin Blue Nitrile\n2-Dolphin Powdered Latex\n3-Dolphin Powdered-free Latex\n");
+scanf("%d",&dolphin);
+system("CLS");
+switch(dolphin)
+{
+case 1:
+printf("You Chose Dolphin Blue Nitrile Gloves\n");
+printf("Package price is 90 Turkish Lira\n");
+printf("Enter Package amount.\n");
+scanf("%d",&p);
+system("CLS");
+cost [0]=90*(p);
+printf("You chose %d package Dolphin Blue Nitrile.\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p);
+scanf("%d",&num1);
+if(num1==1)
+{
+a[0]++;
+Totalvalue+=90*p;
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 2:
+printf("You Chose Dolphin Powdered Latex Gloves\n");
+printf("Package price is 55 Turkish Lira\n");
+printf("Enter Package amount.\n");
+scanf("%d",&p1);
+system("CLS");
+cost [1]=55*(p1);
+printf("You chose %d package Dolphin Powdered Latex.\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p1);
+scanf("%d",&num);
+if (num==1)
+{
+a[1]++;
+Totalvalue+=55*(p1);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 3:
+printf("You chose Dolphin Powdered-free Latex Gloves\n");
+printf("Package price is 71 Turkish Lira\n");
+printf("Enter Package amount.\n");
+scanf("%d",&p2);
+system ("CLS");
+cost [2]=71*(p2);
+printf("You chose %d package Dolphin Powdered-free Latex.\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p2);
+scanf("%d",&num2);
+if (num2==1)
+{
+a[2]++;
+Totalvalue+=71*(p2);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+}
+break;
+case 2:
+printf("You chose Haspet Gloves!\n");
+printf("Please Choose Type of Gloves\n");
+printf("1-Haspet Nitrile\n2-Haspet Powdered Latex\n3-Haspet Powdered-free Latex\n");
+scanf("%d",&haspet);
+system("CLS");
+switch(haspet)
+{
+case 1:
+printf("You chose Haspet Nitrile Gloves\n");
+printf("Package price is 92 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p3);
+system ("CLS");
+cost [3]=92*(p3);
+printf("You chose %d package Haspet Nitrile\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p3);
+scanf("%d",&num3);
+if(num3==1)
+{
+a[3]++;
+Totalvalue+=92*(p3);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 2:
+printf("You chose Haspet Powdered Latex Gloves\n");
+printf("Package price is 55 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p4);
+system("CLS");
+cost[4]=55*(p4);
+printf("You chose %d package Haspet Powdered\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p4);
+scanf("%d",&num4);
+if(num4==1)
+{
+a[4]++;
+Totalvalue+=55*(p4);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 3:
+printf("You chose Haspet Powdered-free Latex Gloves\n");
+printf("Package price is 70 Turkish Lira\n");
+printf("Enter Package amount\n");
+scanf("%d",&p5);
+system("CLS");
+cost[5]=70*(p5);
+printf("You chose %d package Haspet Powdered-free\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p5);
+scanf("%d",&num5);
+if(num5==1)
+{
+a[5]++;
+Totalvalue+=70*(p5);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+}
+break;
+case 3:
+printf("You chose ANSELL Gloves!\n");
+printf("Please Choose Type of Gloves\n");
+printf("1-Ansell Touchntuff Nitrile\n2-Ansell Microflex Nitrile\n3-Ansell Edge Nitrile\n4-Ansell Nitra-Touch Nitrile\n");
+scanf("%d",&ansell);
+system("CLS");
+switch(ansell)
+{
+case 1:
+printf("You chose Ansell Touchntuff Nitrile Gloves\n");
+printf("Package price is 115 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p6);
+system("CLS");
+cost[6]=115*(p6);
+printf("You chose %d package Ansell Toucnhtuff\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p6);
+scanf("%d",&num6);
+if(num6==1)
+{
+a[6]++;
+Totalvalue+=115*(p6);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 2:
+printf("You chose Ansell Microflex Nitrile Gloves\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p6);
+system("CLS");
+cost[6]=115*(p6);
+printf("You chose %d package Ansell Toucnhtuff\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p6);
+scanf("%d",&num6);
+if(num6==1)
+{
+a[6]++;
+Totalvalue+=115*(p6);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 3:
+    printf("You chose Ansell Edge Nitrile Gloves\n");
+printf("Package price is 125 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p6);
+system("CLS");
+cost[6]=125*(p6);
+printf("You chose %d package Ansell Toucnhtuff\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p6);
+scanf("%d",&num6);
+if(num6==1)
+{
+a[6]++;
+Totalvalue+=125*(p6);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+case 4:
+    printf("You chose Ansell Nitra-Touch Nitrile Gloves\n");
+printf("Package price is 130 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p6);
+system("CLS");
+cost[6]=130*(p6);
+printf("You chose %d package Ansell Toucnhtuff\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p6);
+scanf("%d",&num6);
+if(num6==1)
+{
+a[6]++;
+Totalvalue+=115*(p6);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+break;
+
+}
+}
+break;
+case 2:
+    printf("Please select mask brand.\n");
+printf("1-Fresh Mask\n2-Evony Mask\n3-Live Mask\n4-SF Mask\n5-Bilenn Mask");
+scanf("%d",&m);
+system("CLS");
+switch(m)
+{
+case 1:
+    printf("You chose Fresh Mask\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p7);
+system("CLS");
+cost[7]=115*(p7);
+printf("You chose %d package Fresh Mask\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p7);
+scanf("%d",&num7);
+if(num7==1)
+{
+a[7]++;
+Totalvalue+=115*(p7);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 2:
+        printf("You chose Evony Mask\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p8);
+system("CLS");
+cost[8]=115*(p8);
+printf("You chose %d package Evony Mask\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p8);
+scanf("%d",&num8);
+if(num8==1)
+{
+a[8]++;
+Totalvalue+=115*(p8);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 3:
+            printf("You chose Live Mask\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p9);
+system("CLS");
+cost[9]=115*(p9);
+printf("You chose %d package Live Mask\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p9);
+scanf("%d",&num9);
+if(num9==1)
+{
+a[9]++;
+Totalvalue+=115*(p9);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 4:
+  printf("You chose SF Mask\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p10);
+system("CLS");
+cost[10]=115*(p10);
+printf("You chose %d package SF Mask\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p10);
+scanf("%d",&num10);
+if(num10==1)
+{
+a[10]++;
+Totalvalue+=115*(p10);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 5:
+printf("You chose Bilenn Mask\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p11);
+system("CLS");
+cost[11]=115*(p11);
+printf("You chose %d package Bilenn Mask\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p11);
+scanf("%d",&num11);
+if(num11==1)
+{
+a[11]++;
+Totalvalue+=115*(p11);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+
+}
+    break;
+case 3:
+        printf("Please select disinfectant brand.\n");
+printf("1-Derhand\n2-Maratem\n3-Solexx\n4-Hands On\n5-Ecolab\n");
+scanf("%d",&d);
+system("CLS");
+
+switch(d)
+{
+case 1:
+    printf("You chose Derhand\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p12);
+system("CLS");
+cost[12]=115*(p12);
+printf("You chose %d package Derhand\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p12);
+scanf("%d",&num12);
+if(num12==1)
+{
+a[12]++;
+Totalvalue+=115*(p12);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 2:
+        printf("You chose Maratem\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p13);
+system("CLS");
+cost[8]=115*(p13);
+printf("You chose %d package Maratem\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p13);
+scanf("%d",&num13);
+if(num13==1)
+{
+a[13]++;
+Totalvalue+=115*(p13);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 3:
+            printf("You chose Solexx\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p14);
+system("CLS");
+cost[9]=115*(p14);
+printf("You chose %d package Solexx\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p14);
+scanf("%d",&num14);
+if(num14==1)
+{
+a[14]++;
+Totalvalue+=115*(p14);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 4:
+  printf("You chose Hands On\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p15);
+system("CLS");
+cost[15]=115*(p15);
+printf("You chose %d package Hands On\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p15);
+scanf("%d",&num15);
+if(num15==1)
+{
+a[15]++;
+Totalvalue+=115*(p15);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+case 5:
+printf("You chose Ecolab\n");
+printf("Package price is 120 Turkish Lira\n");
+printf("Enter package amount\n");
+scanf("%d",&p16);
+system("CLS");
+cost[16]=115*(p16);
+printf("You chose %d package Ecolab\nAre you sure to buy?\nIf 'YES' Enter 1 else any number\n",p16);
+scanf("%d",&num16);
+if(num16==1)
+{
+a[16]++;
+Totalvalue+=115*(p16);
+}
+printf("Your Cost in basket is %dTL\n",Totalvalue);
+printf("Do you want to buy Something?\n");
+printf("If 'YES' Enter 1 else any number\n");
+scanf("%d",&c);
+system("CLS");
+    break;
+    break;
+}
+    break;
+break;
+}
+}
+}
+while(c==1 || c==2);
+
+int company1,company2,company3,company;
+companyselect:
+printf("Which company do you want to deliver your products?\ncompany1\ncompany2\ncompany3");
+scanf("%d",&company);
+if(company==1)
+{
+   printf("It will be cost ten percent increase for this company.\nAre you confirmed this condition?\n 1=yes other=no");
+   scanf("%d",&company1);
+   if(company1==1)
+{
+ Totalvalue=Totalvalue+(Totalvalue/10);
+ system("CLS");
+  printf("Total value is:%d\nYou chose company 1.\nWhich delivery company do you want to use?",Totalvalue);  //Totalvalue
+}
+   else
+   {
+       system("CLS");
+       goto companyselect;
+   }
+}
+if(company==2)
+{
+   printf("It will be cost five percent increase for this company.\nAre you confirmed this condition?\n 1=yes other=no");
+   scanf("%d",&company2);
+   if(company2==1)
+{
+ Totalvalue=Totalvalue+(Totalvalue/20);
+ system("CLS");
+  printf("Total value is:%d\nYou chose company 2.\nWhich delivery company do you want to use?",Totalvalue);  //Totalvalue
+}
+   else
+   {
+       system("CLS");
+       goto companyselect;
+   }
+}
+if(company==3)
+{
+   printf("It will be cost ten percentage decrease for this company.\nAre you confirmed this condition?\n 1=yes other=no");
+   scanf("%d",&company3);
+   if(company3==1)
+{
+ Totalvalue=Totalvalue-(Totalvalue/10);
+ system("CLS");
+printf("Total value is:%d \nYou chose company 3.\nWhich delivery company do you want to use?",Totalvalue);
+}
+   else
+   {
+       system("CLS");
+       goto companyselect;
+   }
+}
+int delivery;
+printf("\nCargo1-->1-3 days (100 Turkish Liras)\nCargo2--->5-7days(Free)\nCargo3--->Delivery in today(300 Turkish Liras)");
+scanf("%d",&delivery);
+switch(delivery)
+{
+    case 1:
+        printf("It will be on your hands in 1-3 days.");
+      Totalvalue=Totalvalue+100;
+      break;
+    case 2:
+        printf("It will be on your hands in 5-7 days.");
+        break;
+    case 3:
+        printf("It will be on your hands today.");
+        Totalvalue=Totalvalue+300;
+    break;
+}
+system("CLS");
+printf("Your Final Cost is %d\n",Totalvalue);
+printf("Thanks %s for choosing our company Izmir Yasam Destek and please come again.\n",str);
+
+return 0;
+
+}
